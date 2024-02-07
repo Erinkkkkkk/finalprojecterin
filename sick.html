@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+        text-align: center;
+       }
+       .container {
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           margin: 200px 200px;
+       }
+       img {
+           transition: 1s;
+       }
+   </style>
+</head>
+<body style="background-color:green;color: white; font-family: monospace;font-size: xx-large">
+    
+    <div style="font-family: monospace; font-size: 90px"> SICK?! OH NO THIS PAGE MIGHT FEEL YOU MORE SICK! 
+
+    <div class="container">
+
+
+        <img src="sickness.jpeg">
+        <img src="tommyach.jpeg">
+        <img src="Fever.jpeg">
+        <img src="tommyach.jpeg">
+        <img src="tommyach.jpeg">
+        <img src="Fever.jpeg">
+        <img src="Fever.jpeg">
+    </div>
+       
+       
+       <script>
+    
+			var imageOption = document.querySelectorAll('img');
+
+			function pictures() {
+				var randomIndex = Math.floor(Math.random()*imageOption.length);
+				var image = imageOption[randomIndex];
+				image.style.width = Math.random()*400 + "20px";
+			}
+
+			setInterval(pictures, 500)
+		</script>
+    
+</body>
+</html>

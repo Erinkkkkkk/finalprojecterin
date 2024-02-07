@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    button {
+        border: 10px dotted white;
+        padding: 70px 40px;
+        font-size: 18px;
+        color: white;
+        background-color: blue;
+        cursor: pointer;
+        margin: 300px 500px;
+        font-family: monospace;
+    }
+    button:hover {
+			transform: translate(-2px, -2px);
+		}
+		button:active {
+			transform: translate(2px, 2px);
+		}
+		#test-square {
+			width: 100px;
+			height: 100px;
+		}
+       
+    </style>
+</head>
+<body style="background-color:blue;">
+    <button onclick="changeSolution()"> There are things that might help you! </button>
+		<script>
+			function changeSolution() {
+            var solutions = [
+    "You should make yourself a cup of tea",
+    "Why don't you talk about it with your friend?",
+    "Call your parents",
+    "Get your favorite food?",
+    "Take a nap and try to forget about it",
+    "Maybe read?",
+    "Perhaps a fresh cookie?",
+    "Maybe listen to Nirvaria?",
+    "Watch SNL!",
+    "Take a walk outside!",
+    "Take a longggg hot shower",
+    "Watch a fun movie like Borat?",
+    "Watch some cute dog videos!",
+    "Did that make you feel less sad? If not let's dance!",
+    "Sing your sadness away! LALALALALALALALALA",
+    "Read a book that can distract you",
+    "Play a game! Maybe Mario Kart?"
+  ];
+
+  var solutionOption = Math.floor(Math.random() * 17);
+  alert(solutions[solutionOption]);
+
+}
+
+</script>
+
+    
+</body>
+</html>

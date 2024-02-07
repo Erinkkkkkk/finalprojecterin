@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color:yellow;color: white; font-family: monospace;font-size: 90px">
+    <p id="demo"></p>
+    <p id="second"></p>
+    <p id="third"></p>
+    
+    <script>
+        var firstLine = document.getElementById("demo");
+        setInterval(function() {firstLine.innerHTML += "HAHAHAH"}, 900);
+        var secondLine = document.getElementById("second");
+        setInterval(function() {secondLine.innerHTML += "HAHAHAH"}, 700);
+        var thridLine = document.getElementById("third");
+        setInterval(function() {thridLine.innerHTML += "HAHAHAH"}, 300);
+        </script>
+    
+</body>
+</html>
